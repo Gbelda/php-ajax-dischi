@@ -7,11 +7,7 @@ include __DIR__ . '/../partials/head.php';
 
 <body>
 
-    <header>
-        <div class="header container">
-            <img src="../milestone1/assets/img/spotify.png" alt="" />
-        </div>
-    </header>
+    <?php include __DIR__ . '/../partials/site_header.php'; ?>
 
     <main>
         <div class="container">
