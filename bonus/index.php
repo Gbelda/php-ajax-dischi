@@ -11,8 +11,18 @@ include __DIR__ . '/partials/head.php'
 
         <main>
         <div class="container">
+            
+            <div class="select d-flex justify-center">
+                <h4>Select by genre:</h4>
+                <select name="genre" id="genres" v-model="genre">
+                    <option value="" selected>All</option>
+                    <option v-for="(genre, index) in genres" :value="`${genre}`">{{genre}}</option>
+                </select>
+            </div>
+            <!-- ./GENRE SELECTOR -->
+
             <div class="row d-flex flex-wrap justify-center">
-                    <div class="card" v-for="album in albums">
+                    <div class="card" v-for="album in filterAlbums()">
                         <div class="img_container">
                             <img :src="`${album.poster}`" alt="">
                         </div>
@@ -23,6 +33,7 @@ include __DIR__ . '/partials/head.php'
                     </h5>
                     </div>
             </div>
+            <!-- ./ALBUMS -->
         </div>
     </main>
     

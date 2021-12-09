@@ -80,3 +80,12 @@ header("Content-type: text/css; charset: UTF-8");
     .year{
         display: block;
     }
+
+    .select{
+        padding-top: 2rem;
+    }
+
+    h4{
+        color: white;
+        margin-right: .5rem;
+    }

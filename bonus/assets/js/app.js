@@ -3,14 +3,16 @@ const app = new Vue({
     data: {
         albums: [],
         genres: [],
+        genre: "",
+
     },
     mounted() {
         axios
             .get('./database/albums.php')
             .then(response => {
                 this.albums = response.data
+                this.getGenres
             })
-        this.getGenres
     },
     computed: {
         getGenres() {
@@ -21,4 +23,11 @@ const app = new Vue({
             });
         }
     },
+    methods: {
+        filterAlbums() {
+            return this.albums.filter((album) => {
+                return album.genre.indexOf(this.genre) > -1;
+            });
+        },
+    }
 })
