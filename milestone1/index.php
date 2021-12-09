@@ -1,6 +1,6 @@
 <?php
 
-include __DIR__ . '/../database/albums.php';
+include __DIR__ . '/database/albums.php';
 include __DIR__ . '/partials/head.php';
 ?>
 
