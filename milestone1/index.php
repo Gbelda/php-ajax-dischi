@@ -1,13 +1,13 @@
 <?php
 
 include __DIR__ . '/../database/albums.php';
-include __DIR__ . '/../partials/head.php';
+include __DIR__ . '/partials/head.php';
 ?>
 
 
 <body>
 
-    <?php include __DIR__ . '/../partials/site_header.php'; ?>
+    <?php include __DIR__ . '/partials/site_header.php'; ?>
 
     <main>
         <div class="container">
