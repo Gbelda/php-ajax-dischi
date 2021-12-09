@@ -1,7 +1,7 @@
 const app = new Vue({
     el: '#app',
     data: {
-        albums: []
+        albums: [],
     },
     mounted() {
         axios
@@ -9,5 +9,5 @@ const app = new Vue({
             .then(response => {
                 this.albums = response.data
             })
-    }
+    },
 })
